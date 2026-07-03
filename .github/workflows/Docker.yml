@@ -20,7 +20,7 @@ jobs:
         docker build --platform linux --tag sorianopablo/websiteplatzi:latest -f CI/Dockerfile .
     - name: Publish docker image
       run: |
-        docker push aminespinoza/websiteplatzi:latest
+        docker push sorianopablo/websiteplatzi:latest
     - name: App service auth
       uses: azure/webapps-deploy@v2
       with:
